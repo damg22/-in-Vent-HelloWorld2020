@@ -1,6 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Invent2020</string>
-    <string name="start_button">Join</string>
-    <string name="host_button">Host</string>
-    <string name="title">Among Us</string>
+    <string name="app_name">HW2020 UI</string>
+    <string name="tasklist">Task 1\nTask 2\nTask 3</string>
 </resources>
