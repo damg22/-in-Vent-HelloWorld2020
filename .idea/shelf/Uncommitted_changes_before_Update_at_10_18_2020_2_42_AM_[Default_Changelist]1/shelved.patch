@@ -1,0 +1,107 @@
+Index: app/src/main/res/values-night/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources xmlns:tools=\"http://schemas.android.com/tools\">\r\n    <!-- Base application theme. -->\r\n    <style name=\"Theme.HW2020UI\" parent=\"Theme.MaterialComponents.DayNight.NoActionBar\">\r\n        <!-- Primary brand color. -->\r\n        <item name=\"colorPrimary\">@color/purple_200</item>\r\n        <item name=\"colorPrimaryVariant\">@color/purple_700</item>\r\n        <item name=\"colorOnPrimary\">@color/black</item>\r\n        <!-- Secondary brand color. -->\r\n        <item name=\"colorSecondary\">@color/teal_200</item>\r\n        <item name=\"colorSecondaryVariant\">@color/teal_200</item>\r\n        <item name=\"colorOnSecondary\">@color/black</item>\r\n        <!-- Status bar color. -->\r\n        <item name=\"android:statusBarColor\" tools:targetApi=\"l\">?attr/colorPrimaryVariant</item>\r\n        <!-- Customize your theme here. -->\r\n    </style>\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values-night/themes.xml	(revision ffdf145bf3515fa923eea74e0b9b6f6a56dec82b)
++++ app/src/main/res/values-night/themes.xml	(date 1603001311819)
+@@ -1,6 +1,6 @@
+ <resources xmlns:tools="http://schemas.android.com/tools">
+     <!-- Base application theme. -->
+-    <style name="Theme.HW2020UI" parent="Theme.MaterialComponents.DayNight.NoActionBar">
++    <style name="Theme.Invent2020" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+         <!-- Primary brand color. -->
+         <item name="colorPrimary">@color/purple_200</item>
+         <item name="colorPrimaryVariant">@color/purple_700</item>
+Index: app/src/main/res/values/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources xmlns:tools=\"http://schemas.android.com/tools\">\r\n    <!-- Base application theme. -->\r\n    <style name=\"Theme.HW2020UI\" parent=\"Theme.MaterialComponents.DayNight.NoActionBar\">\r\n        <!-- Primary brand color. -->\r\n        <item name=\"colorPrimary\">@color/purple_500</item>\r\n        <item name=\"colorPrimaryVariant\">@color/purple_700</item>\r\n        <item name=\"colorOnPrimary\">@color/white</item>\r\n        <!-- Secondary brand color. -->\r\n        <item name=\"colorSecondary\">@color/teal_200</item>\r\n        <item name=\"colorSecondaryVariant\">@color/teal_700</item>\r\n        <item name=\"colorOnSecondary\">@color/black</item>\r\n        <!-- Status bar color. -->\r\n        <item name=\"android:statusBarColor\" tools:targetApi=\"l\">?attr/colorPrimaryVariant</item>\r\n        <!-- Customize your theme here. -->\r\n    </style>\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/themes.xml	(revision ffdf145bf3515fa923eea74e0b9b6f6a56dec82b)
++++ app/src/main/res/values/themes.xml	(date 1603001311823)
+@@ -1,6 +1,6 @@
+ <resources xmlns:tools="http://schemas.android.com/tools">
+     <!-- Base application theme. -->
+-    <style name="Theme.HW2020UI" parent="Theme.MaterialComponents.DayNight.NoActionBar">
++    <style name="Theme.Invent2020." parent="Theme.MaterialComponents.DayNight.NoActionBar">
+         <!-- Primary brand color. -->
+         <item name="colorPrimary">@color/purple_500</item>
+         <item name="colorPrimaryVariant">@color/purple_700</item>
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\r\n    id 'com.android.application'\r\n    id 'com.google.gms.google-services'\r\n}\r\n\r\nandroid {\r\n    compileSdkVersion 30\r\n    buildToolsVersion \"30.0.2\"\r\n\r\n    defaultConfig {\r\n        applicationId \"com.example.invent2020\"\r\n        minSdkVersion 16\r\n        targetSdkVersion 30\r\n        versionCode 1\r\n        versionName \"1.0\"\r\n\r\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\r\n    }\r\n\r\n    buildTypes {\r\n        release {\r\n            minifyEnabled false\r\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\r\n        }\r\n    }\r\n    compileOptions {\r\n        sourceCompatibility JavaVersion.VERSION_1_8\r\n        targetCompatibility JavaVersion.VERSION_1_8\r\n    }\r\n}\r\n\r\ndependencies {\r\n\r\n    implementation 'androidx.appcompat:appcompat:1.2.0'\r\n    implementation 'com.google.android.material:material:1.2.1'\r\n    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'\r\n    testImplementation 'junit:junit:4.+'\r\n    implementation 'com.google.firebase:firebase-analytics'\r\n    implementation platform('com.google.firebase:firebase-bom:25.12.0')\r\n    androidTestImplementation 'androidx.test.ext:junit:1.1.2'\r\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build.gradle	(revision ffdf145bf3515fa923eea74e0b9b6f6a56dec82b)
++++ app/build.gradle	(date 1603001192560)
+@@ -34,9 +34,21 @@
+     implementation 'androidx.appcompat:appcompat:1.2.0'
+     implementation 'com.google.android.material:material:1.2.1'
+     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
++    implementation 'com.google.firebase:firebase-auth:19.2.0'
++    implementation 'com.google.firebase:firebase-database:19.2.1'
+     testImplementation 'junit:junit:4.+'
+     implementation 'com.google.firebase:firebase-analytics'
+     implementation platform('com.google.firebase:firebase-bom:25.12.0')
+     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
++    implementation fileTree(dir: 'libs', include: ['*.jar'])
++    //noinspection GradleCompatible
++    implementation 'com.android.support:appcompat-v7:26.1.0'
++    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
++    implementation 'com.google.firebase:firebase-auth:11.8.0'
++    implementation 'com.google.android.gms:play-services-location:11.8.0'
++    implementation 'com.google.firebase:firebase-database:11.8.0'
++    testImplementation 'junit:junit:4.12'
++    androidTestImplementation 'com.android.support.test:runner:1.0.1'
++    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+ }
+\ No newline at end of file
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    package=\"com.example.invent2020\">\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.Invent2020\">\r\n        <activity android:name=\".StartPage\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n        <activity android:name=\".JoinPage\"></activity>\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/AndroidManifest.xml	(revision ffdf145bf3515fa923eea74e0b9b6f6a56dec82b)
++++ app/src/main/AndroidManifest.xml	(date 1603001590637)
+@@ -2,6 +2,9 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="com.example.invent2020">
+ 
++    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
++    <uses-permission android:name="android.permission.INTERNET" />
++
+     <application
+         android:allowBackup="true"
+         android:icon="@mipmap/ic_launcher"
+@@ -9,6 +12,11 @@
+         android:roundIcon="@mipmap/ic_launcher_round"
+         android:supportsRtl="true"
+         android:theme="@style/Theme.Invent2020">
++        <service
++            android:name=".Tracking"
++            android:enabled="true"
++            android:exported="true"></service>
++
+         <activity android:name=".StartPage">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+@@ -16,7 +24,7 @@
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+         </activity>
+-        <activity android:name=".JoinPage"></activity>
++        <activity android:name=".JoinPage" />
+     </application>
+ 
+ </manifest>
+\ No newline at end of file

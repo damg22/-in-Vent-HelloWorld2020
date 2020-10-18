@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#242129">
+    android:background="#000000">
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -13,6 +14,7 @@
         android:layout_marginRight="56dp"
         android:layout_marginBottom="24dp"
         android:contentDescription="@string/start_button"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/ic_media_play" />
@@ -28,22 +30,57 @@
         android:text="@string/start"
         android:textColor="#F00"
         android:textSize="64sp"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/roomCode"
-        android:layout_width="192dp"
-        android:layout_height="46dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginRight="116dp"
-        android:layout_marginBottom="612dp"
+        android:layout_width="233dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/font"
         android:text="@string/room_code"
         android:textColor="#C5C4C4"
-        android:textSize="32sp"
+        android:textSize="39sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="imageButton,startWord" />
+
+    <EditText
+        android:id="@+id/codeRoom"
+        android:layout_width="237dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+
+        android:autoText="false"
+        android:background="#80757575"
+
+
+
+        android:editable="true"
+        android:inputType="textPassword"
+        android:shadowColor="@color/teal_200"
+
+        android:singleLine="true"
+        android:textAllCaps="true"
+
+        android:textColor="#FFFFFF"
+        android:textColorHint="#fefefe"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roomCode"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
