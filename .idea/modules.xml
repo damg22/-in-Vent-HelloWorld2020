@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/-in-Vent-HelloWorld2020.iml" filepath="$PROJECT_DIR$/.idea/-in-Vent-HelloWorld2020.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Invent2020.iml" filepath="$PROJECT_DIR$/.idea/modules/Invent2020.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Invent2020.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Invent2020.app.iml" />
     </modules>
   </component>
 </project>
