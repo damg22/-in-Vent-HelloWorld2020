@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "207991285547",
+    "firebase_url": "https://in-vent-helloworld2020.firebaseio.com",
+    "project_id": "in-vent-helloworld2020",
+    "storage_bucket": "in-vent-helloworld2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207991285547:android:8774b200e190106d4d876e",
+        "android_client_info": {
+          "package_name": "com.example.invent2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207991285547-ckguaabo0c1jm04cg9b3m2trmlhejvn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP1KAJJFEAZOFHA9ag--6HXqrnC-peRd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207991285547-ckguaabo0c1jm04cg9b3m2trmlhejvn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
